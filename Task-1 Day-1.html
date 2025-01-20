@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to JavaScript</title>
+    <!--Task1-->
+    <script>
+      "use strict";
+      alert("Hello, World!");
+      //Task2
+      let num = 100;
+      let name = "JOHN";
+      let isMarried = true;
+      document.write(num + "<br>");
+      document.write(name + "<br>");
+      document.write(isMarried + "<br>");
+      //   console.log(num);
+      //   console.log(name);
+      //   console.log(isMarried);
+
+      //Task3
+      var a = 10;
+      var b = 20;
+      document.write(a + b + "<br>");
+      document.write(a - b + "<br>");
+      document.write(a * b + "<br>");
+      document.write(b / a + "<br>");
+      document.write(a ** b + "<br>");
+
+      //Task4
+      var name1 = "Hi John ";
+      var message = "This is JavaScript Learning platform" + "<br>";
+      document.write(name1 + message);
+      //Task5
+      var name1 = "JOHNFRD";
+      var num1 = 10;
+      var bg = 12647384738748394n;
+      var box = null;
+      let isGood = true;
+      console.log(typeof name1);
+      console.log(typeof num);
+      console.log(typeof bg);
+      console.log(typeof box);
+      console.log(typeof isGood);
+      //Task7
+      // Script with semicolons
+      document.write("This line ends with a semicolon." + "<br>");
+      document.write(" This line also ends with a semicolon." + "<br>");
+
+      // Script without semicolons
+      document.write(" This line does not end with a semicolon" + "<br>");
+      document.write(" This line also does not end with a semicolon" + "<br>");
+
+      //Task8
+      let i = 1;
+      let sum = 1;
+      let sum1 = 1;
+      while (i <= 10) {
+        sum = sum + i;
+        i++;
+        let j = 1;
+        while (j <= 5) {
+          sum1 = sum1 + j;
+          j++;
+        }
+      }
+      console.log(sum);
+      console.log(sum1);
+
+      //Task9
+      var college, dep;
+      let clg, depp;
+      //Task11 and Task12
+      //   max = 10;
+
+      //Task 16
+      let myname;
+      var myage;
+      const salary = 10000;
+      //Task 17
+      //   salary = 200; gives error of assignment to constant variable
+      //Task 18
+      var nummm1;
+      console.log(nummm1); //gives undefined
+      //Task 19
+      let frstname = "mtr";
+      let rollnum = 130;
+      let isHosteler = true;
+      document.write(typeof frstname + "<br>");
+      document.write(typeof rollnum + "<br>");
+      document.write(typeof isHosteler + "<br>");
+      document.write(typeof alert + "<br>");
+
+      //Task20
+      var dep1 = "CSECY-AD";
+      var dep2 = dep1;
+      document.write(dep2);
+      //Task 21
+      var a = 10;
+      let bi = "name";
+      let c = true;
+      let d = null;
+      let e;
+      let user = {
+        sname: "john",
+        mark: 89,
+      };
+      //Task 22
+      console.log(typeof a);
+      console.log(typeof bi);
+      console.log(typeof c);
+      console.log(typeof d);
+      console.log(typeof e);
+      console.log(typeof user);
+      //Task 23
+      var n = Symbol("hello");
+      console.log(n);
+      //Task 24 Already done above
+      //Task 25 var can be redeclared while let can be declraed only once
+      //Task 26
+      let myname1 = "123";
+      console.log(typeof Number(myname1));
+      myname1 = myname * 1;
+      console.log(typeof myname1);
+      //Task 27
+      let mm = true;
+      console.log(typeof String(mm));
+      console.log(typeof Boolean(mm));
+      //Task 28
+      var a = 10;
+      var b = 20;
+      document.write(a + b + "<br>");
+      document.write(a - b + "<br>");
+      document.write(a * b + "<br>");
+      document.write(b / a + "<br>");
+      document.write(a ** b + "<br>");
+      document.write((b % a) + "<br>");
+      //Task 29
+      document.write(a++ + "<br>");
+      document.write(b-- + "<br>");
+      //Task 30
+      let exp = ((a + b) * a) / b ** 2;
+      document.write(exp + "<br>");
+      //Task 31
+      var a = 100;
+      var b = 19;
+      console.log(a > b);
+      console.log(a < b);
+      console.log(a >= b);
+      console.log(a <= b);
+      //Task 32
+      let a1 = 10;
+      let a2 = "10";
+      console.log(a1 == a2);
+      console.log(a1 === a2);
+      //task 33
+      let wrd = "MTR";
+      let wrd1 = "Mtr";
+      console.log(wrd === wrd1);
+      //Task 34
+      console.log(a1 != a2);
+      console.log(a1 !== a2);
+      //Task 35
+      let nn = null;
+      let nnn;
+      console.log(nn == nnn);
+      console.log(nn === nnn);
+      //Task 36
+      var a = 10;
+      if (a % 2 == 0) {
+        document.write("the num is even :" + a);
+      } else {
+        document.write("the num is odd :" + a);
+      }
+      //task 37
+      let number = 5; // You can change this value to test different cases
+
+      if (number >= 0) {
+        if (number > 0) {
+          console.log("The number is positive.");
+        } else {
+          console.log("The number is zero.");
+        }
+      } else {
+        console.log("The number is negative.");
+      }
+      //Task 38
+      let res = number % 2 == 0 ? "Even" : "Odd";
+      console.log(res);
+      //Task 39
+      let myVar = "Hello, World!";
+      let message11 = myVar ? "Yes" : "No";
+      console.log(message11);
+      //Task 40
+      let score = 75;
+      let status = score >= 50 ? "Pass" : "Fail";
+      console.log(status);
+      //Task 41
+      var a = 100;
+      var b = 19;
+      console.log(a && b);
+      console.log(a || b);
+      console.log(!a);
+      console.log(!b);
+      //Task 42
+      if (a >= 100 && a < 999) {
+        console.log("in range");
+      }
+      //Task 43
+      console.log(!a);
+      //Task 45
+      var a = 5;
+      var b = 19;
+      console.log(a && b);
+      console.log(a || b);
+      //Task 46
+      function sum2(a, b) {
+        return a + b;
+      }
+      var result = sum2(a, b);
+      console.log(result);
+      //Task 47
+      function area(side) {
+        return a * a;
+      }
+      var result1 = area(a);
+      //task 48
+      function welcome() {
+        console.log("WELCOME!!!!!!!");
+      }
+      welcome();
+      //TAsk 49
+      function value() {
+        return;
+      }
+      value();
+      //Task  51
+      let area1 = (side) => side * side;
+      console.log(area1(5));
+      //Task 52
+      let soln = (c, d) => c + d;
+      console.log(soln(5, 5));
+      //Tak 53
+      let EvenorOdd = (num) => num % 2 == 0;
+      console.log(EvenorOdd(5));
+      //Task 54
+      const maxValue = (a, b) => {
+        return a > b ? a : b;
+      };
+      console.log(maxValue(2, 4));
+      //Task 55
+      const myObject = {
+        value: 10,
+        multiplyTraditional: function (factor) {
+          console.log("Traditional function this.value:", this.value);
+          return this.value * factor;
+        },
+        multiplyArrow: (factor) => {
+          console.log("Arrow function this.value:", this.value);
+          return this.value * factor;
+        },
+      };
+      console.log(myObject.multiplyTraditional(Number(prompt("number"))));
+      console.log(myObject.multiplyArrow(Number(prompt("number"))));
+    </script>
+  </head>
+  <body></body>
+</html>

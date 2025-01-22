@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-2</title>
+    <script>
+      //ARRAYS
+      //Task 1
+      let fruits = ["apple", "banana", "guava", "orange"];
+      console.log(fruits.push("Mango"));
+      //Task 2
+      console.log(fruits.pop());
+      //Task 3
+      console.log(fruits.unshift("Strawberry"));
+      for (let i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+      }
+      //Task 4
+      console.log(fruits.shift());
+      //Task 5
+      function myarr(arr) {
+        arr.push(7);
+        return arr;
+      }
+      let arr = [1, 2, 3, 4, 5, 6];
+      console.log(myarr(arr));
+      //Task 6
+      function tostring(str) {
+        let strarr = str.split(" ");
+        strarr.pop();
+        return strarr;
+      }
+      let str = "Hello World";
+      console.log(tostring(str));
+      //Task 7
+      let days = [
+        "Sunday",
+        "Monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+      ];
+      days.shift();
+      days.push("Sunday");
+      for (let i = 0; i < days.length; i++) {
+        console.log(days[i]);
+      }
+      //task 8
+      let letters = ["a", "b", "c"];
+      console.log(letters.push("z"));
+      console.log(letters.unshift("z"));
+      for (let i = 0; i < letters.length; i++) {
+        console.log(letters[i]);
+      }
+      //Task 9
+      let movies = ["war", "thar", "king", "quess"];
+      let user1 = prompt("give movie name ");
+      movies.push(user1);
+      for (let i = 0; i < movies.length; i++) {
+        console.log(movies[i]);
+      }
+      //Task 10
+      console.log(movies.splice(2, 1));
+    </script>
+  </head>
+  <body></body>
+</html>
